@@ -1,0 +1,181 @@
+	Resumo
+	Desde 1999 a SAE BRASIL passou a realizar a competição SAE AeroDesign no Brasil dando grande destaque ao desenvolvimento qualitativo de projetos aeronáuticos por estudantes de engenharia. Devido à carência de metodologia específica na análise estatística de resultados desta competição são propostas nesse artigo aplicações utilizando os resultados anteriores com a finalidade de se obter valores de pontuação necessários para estabelecer um ótimo para o algoritmo genético. Este busca estabelecer o comprometimento de qualidades em todas as áreas de um projeto aeronáutico e o que viabiliza a utilização é a possibilidade de perceber as consequências de mudanças das variáveis no projeto. As regras e equações que regulamentam a pontuação das aeronaves na competição, juntamente com a modelagem matemática da aeronave em seu comportamento aerodinâmico, de estabilidade e controle, peso e performance compõem o algoritmo que estabelece a função objetivo nesse problema. Uma modelagem adequada do problema e a definição coerente dos objetivos são de grande importância para o sucesso do projeto.
+
+Palavras chaves: Aeronáutica. SAE Brasil. Aeronaves Rádio Controladas. Otimização.
+
+
+
+	Materiais e métodos
+
+	2.3 Os Dados utilizados
+	
+	Os dados utilizados no artigo foram obtidos do site oficial da SAE Brasil e a partir destes fez-se análises de informações características de cada avião, sobre o comportamento e performance na competição de 40 indivíduos sendo 10 de cada ano (2018, 2017, 2016 e 2014). Os dados obtidos e analisados foram dos parâmetros:
+
+	- Carga paga: Que denota o quanto de peso o avião carregou na competição
+	- Peso vazio: O peso do avião
+	- Pontos de Apresentação e Relatório: Pontos vindos da apresentação oral explanando todo o projeto aeronáutico realizado, e o relatório técnico do projeto.
+	- Eficiência Estrutural: Razão entre carga paga e o peso vazio
+	- Pontos de Voo: Pontuação que utiliza da carga paga e que privilegia aquelas equipes com um desenvolvimento sério de seu projeto, dado que nesta pontuação, quanto mais a equipe seguir o peso vazio estimulado no relatório de projeto e quanto mais desenvolvido o relatório, maior será a pontuação neste parâmetro.
+
+	Durante o processo de tabulação e tratamento dos dados das competições anteriores observou-se que as pontuações gerais se comparadas por anos apresentam uma grande variabilidade. 
+
+	2.1 Teorias Aplicadas
+	A partir desta distribuição empírica de dados, foram realizadas análises estatísticas envolvendo observação de Boxplots pois possibilita a comparação entre amostras de anos diferentes e uma visão mais ampla do sistema de pontuações como um todo. Além disso, gráficos R² foram usados, onde o eixo das abcissas representa a pontuação geral e o das ordenadas, os parâmetros restantes. Computou-se também as médias e dispersão dos parâmetros das dez primeiras equipes e das cinco primeiras afim de conseguir avaliar qual parâmetro é mais prevalente nas equipes vencedoras, e assim denotar um objetivo tangível para o uso nos algoritmos otimizadores.
+
+	Resultados e Discussões
+
+
+
+Figura 1 – Carga Paga em 2014
+Figura 2 – Eficiência Estrutural em 2014
+Figura 3 - Peso Vazio EM 2014
+Figura 4 – Pontos de Pontuação e Relatório em 2014
+Figura 5 – Pontos de Voo em 2014
+Figura 6 - Pontos de Eficiência Estrutural em 2016
+Figura 7 - Peso Vazio em 2016
+Figura 8 - Carga Paga em 2016
+Figura 9 - Pontos de Relatório em 2016
+Figura 10 - Pontos de Voo em 2016
+
+Figura 11 - Carga Paga em 2017
+Figura 12 - Eficiência Estrutural em 2017
+Figura 13 - Peso Vazio em 2017
+
+
+3.1 Análise 2014
+
+Observando a figura 1 e a figura 2, aquelas equipes que têm melhores valores de carga paga, apresentaram uma maior Eficiência Estrutural. Observando a figura 3 nota-se que dois aviões apresentaram um comportamento anormal, um deles carregando pouca carga com um peso vazio baixo enquanto o outro abusou do peso vazio e carregou uma maior quantidade de carga. Essa análise é importante pois a equipe que obteve exito, foi a segunda.
+
+Figura 1 – Carga Paga em 2014
+Figura 2 – Eficiência Estrutural em 2014
+Figura 3 -> Peso Vazio
+
+Nessas condições de competição uma eficiência estrutural igual a 5 seria suficiente para alcançar uma colocação entre os 5 primeiros. Ainda, analisando a Figura 3, observa-se uma maior concentração dos competidores em valores próximos de 2 kg; Isso significa que com atuais dados, levando em conta os cálculos da eficiência estrutural, um bom lugar n colocação requer um valor de carga paga entre 10kg e 11kg.
+
+
+Observando a figura 4, pode-se agrupar os dados em três. Um acima de 190, outro entre 180 e 190 e um terceiro entre 165 e 180. Considerando os dados, equipes com bons resultados na confecção do relatório tem conseguido boas colocações, sendo assim é sensato afirmar que é necessária uma pontuação acima de 190 pontos de relatório e apresentação. Dado que isso garantirá que o desempenho do avião seja realmente aproveitado através dos propostos pelo relatório relatório.
+
+
+Figura 4 -> Pontos de apresentação e relatório
+
+
+Em uma situação ideal onde todas as equipes obtêm mesmas notas de relatório e tem mesmo comprometimento em seguir com o peso do avião estimulado no relatório, os pontos de voo, expostos na figura 5 deve apresentar uma mesma curva que a curva de Carga paga uma vez que um parâmetro (Pontos de voo) é amplificador da outro (Carga Paga).
+
+Figura 5 -> Pontos de Voo
+
+
+Podemos analisar neste ano, que nas posições medianas do top 10 ____Quais posições?____, houve uma maior desordem em comparação com outras equipes, o qual simboliza que estas equipes demonstraram pior rendimento em seguir e de pontuação de relatório, mas compensaram na pontuação de carga paga. Isso demonstra a vital importância do bom planejamento a aeronave afim de conseguir estimular quais pontos fortes ela apresentará em relação às outras equipes.
+
+
+
+
+
+3.2 Análise até 2016
+
+	Considerando a figura 7, observa-se que a pontuação de peso vazio se concentrou em valores próximos de 2 assim como foi proposto na análise do ano de 2014. Como exposto na figura 6, pode-se observar uma tendência de aumento na eficiência uma vez que nas equipes de ótimo rendimento houve um aumento na carga paga (conforme figura 8) mas, um valor de eficiência estrutural igual a 5.5 continua sendo uma boa pontuação. Sendo assim, a carga paga deve-se estipular em valores acima de 11 Kg.
+
+Figura 6 -> Pontos de Eficiência Estrutural
+
+Figura 7 -> Peso Vazio
+
+Figura 8 -> Carga Paga
+
+Vale ressaltar que os pontos de relatório e apresentação, conforme pode ser visto na figura 9 apresenta uma tendência de crescimento que acompanha o gráfico R² da figura 8.
+
+Figura 9 -> Pontos de Relatório
+
+
+Na curva do gráfico R² da figura 10 observa-se na pontuação de voo das equipes colocadas entre posições 5 e 7, assim como no ano de 2014, um comportamento diferente, porém, benéfico. Um fator que auxiliou a boa colocação das equipes foi a pontuação de relatório que pode ser vista na figura 9.
+
+Figura 10 -> Pontos de Voo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.3 Análise até 2017
+
+Conforme a figura 11, neste ano as pontuações de peso vazio tiveram uma grande diferença se comparadas com os anos de 2014 e 2016. As equipes no ano de 2017 mostraram o uso de aeronaves mais pesadas, o que causou uma menor eficiência estrutural para 4 das 10 equipes, porém, esse aumento do peso vazio garantiu uma maior carga paga se comparada com outros anos em todas as equipes possibilitando valores maiores de 12 Kg. 
+
+Figura 11 -> Carga Paga
+
+
+Observando a figura 11, novamente, pode-se estipular, de forma geral, uma boa eficiência estrutural com valores próximos de 5.5. Considerando esse valor qualquer aumento no peso do avião requer uma melhora significativa na carga paga. Ainda, observando a figura 11, uma boa pontuação de carga paga é estipulada entre 12kg e 13kg e, considerando a eficiência estrutural proposta, com um peso vazio entre 2 kg e 2,5 kg, a equipe uma boa colocação na competição. Essa afirmação pode ser comprovada pela figura 13.
+
+Figura 12 -> Eficiência Estrutural
+Figura 13 -> Peso Vazio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.4 Análise até 2018
+
+Neste ano o comportamento dos parâmetros foram parecidos com os do ano anterior conforme as imagens na seção Anexos. Sendo assim, utilizou-se das análises feitas anteriormente para averiguar sua aplicabilidade. Sabe-se que, o cálculo da pontuação geral é representada na figura 14 e as fórmulas para cálculos do parâmetros, pelas figuras 15 a 20.
+
+
+
+Neste artigo, os intervalos estimados para os parâmetros, como já apresentados anteriormente, estão expostos na figura 21. A partir disto, testou-se os parâmetros e as pontuações obtidas são apresentadas na figura 22. Dessa forma, obteve-se uma colocação satisfatória.
+
+
+
+
+ 
+
+
+
+
+4. Conclusão 
+Neste ano de 2018 a importância da pontuação de relatório foi tomada como oficial, e agora, a
+pontuação de voo diretamente depende da de relatório. Por causa disso, por a pontuação de
+relatório apresentar uma curva crescente, isso afetou a curva de pontos de voo, tornando a
+crescente também, prejudicando então as equipes baixas. Isso significa uma tendência
+consolidando da importância das notas de relatório ao mesmo tempo da carga paga.
+Note-se em pontos de relatório a partir desde ano torna-se um parâmetro onde ideal não é um
+valor mínimo, mas um valor a ser sempre maior que restante das equipes do ano, mas dado a
+natureza desconhecida destas pontuações no momento da competição, uma boa equipe não
+preza por valores razoáveis ou médios. Em casos onde uma boa pontuação de relatório não é
+possível, a equipe enfrentará a partir deste ano, uma desvantagem maior que representa a
+necessidade de então superar a carga paga. Porém, com atuais dados, estranha-se uma equipe
+ter carga paga alta com baixos pontos de relatório.
+Pode-se voltar a atenção a este fato e dele, observar que talvez a existência de uma vontade
+séria da parte da SAE Brasil, em realmente cumprir suas metas, como dito na introdução, o de
+promover o estudo aeronáutico e teu avanço no Brasil. Pois parece claro que há uma indução
+por parte da competição em exortar equipes com técnica e resultados crescentes e bem
+desenvolvidos. Isso pode significar que para equipes que desejam entrar na competição e estar
+emparelhado com os melhores (top5 ou top10), esta equipe não necessariamente pode contar
+com o uso de alguma tecnologia inovadora ou inédita na competição (ainda em 2018 é raro o
+uso de impressão 3d, por exemplo), pois apenas uma séria aplicação e estudo do projeto
+aeronáutico pode garantir esta equipe poder aproximar-se dos melhores. Assim um caminho
+que pode ser apontado, é caso uma equipe deseje avançar ao topo, deve seguir os valores
+estipulados como ideais mas mais importante ainda, deve-se organizar e desenvolver-se
+tecnicamente para poder assim alçar altos voos com grandes cargas.
+
+
+
+
+
+
+
+
+
+	

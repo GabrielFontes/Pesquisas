@@ -1,0 +1,73 @@
+Observando a carga paga e o peso vazio, enquanto o primeiro colocado carregou menos peso e teve uma aeronave mais leve, o segundo colocado carregou mais peso e teve uma aeronave mais pesada. Porém a eficiência estrutural do primeiro colocado foi superior ao segundo colocado. Os pontos de voo do primeiro colocado também foram inferiores ao segundo e terceiro colocados.
+
+
+
+
+
+Mas, por que o terceiro colocado mesmo tendo uma maior eficiência estrutural não alcançou boas posições?
+
+
+O terceiro colocado teve carga paga superior ao primeiro colocado com o peso vazio próximo, obtendo assim uma maior eficiência estrutural e a pontuação de Apresentação e Relatório do terceiro colocado foi muito superior ao primeiro colocado assim como os Pontos de voo.
+
+
+
+Mas, por que o oitavo colocado teve a maior eficiência estrutural e não conseguiu alcançar boas colocações?
+
+Os pontos de voo do oitavo colocado foram próximos do primeiro  
+
+
+
+
+Para facilitar as análises consideraremos três grupos de pontuação:
+
+	Pontuações de Projeto e relatório
+		Pontos de Voo (Peso vazio previsto e  real)
+		Pontos de Acuracidade (Carga paga prevista e real)
+
+	Apresentação e relatório
+
+	Pontuações de Voo:
+		Bonus de confiabilidade (Pontuação das baterias);
+		Bonus pouso (Pouso bem feito = Valor da Carga paga);
+
+	Pontos de Aeronave
+		Eficiência estrutural
+
+2014:
+Dedução 1: Eficiência estrutural é a pontuação mais importante.
+
+	1º - O Oitavo colocado obteve a maior eficiência estrutural. Por que não ganhou então?
+	2º - O quarto colocado obteve eficiência estrutural péssima e ainda conseguiu uma boa colocação. Por que?
+
+1º Teste: Por que a aeronave com maior eficiência estrutural não ganhou a competição?
+	O Oitavo obteve pior 'pontuação de vôo bem feito' e os maiores pontos de relatório
+
+2º Teste: Por que a aeronave em 4º obteve eficiência estrutura ruim e ainda conseguiu uma boa colocação?
+	O quarto colocado obteve a melhor pontuação de voo bem feito
+
+
+Dedução 2: Ou seja, quem tem altas "Pontuações de Voo bem feito" ganham a competição.
+
+	1º - O 9º, 4º e o 7º colocados obtiveram as maiores Pontuações de Voo (Bonus). Por que eles não ganharam a competição?
+
+1º Teste: Por que as aeronaves com maiores Pontuações de Voo bem feito não ganharam a competição?
+	O 9º colocado obteve a segunda pior nota de relatório e a segunda pior eficiência estrutural assim como o quarto colocado, segunda pior pontuação de Projeto.
+		  Ou seja, o que diferenciou o 9º e o 4º colocado foi  a nota de relatório e a pontuação de projeto.
+	Será, que realmente a nota de relatório foi primordial na distância entre o 4º e o 9º??? O 7º colocado obteve a maior nota de relatório porém obteve a pior pontuação de projeto. Mesmo com a pior nota de projeto ele passou o 9º. Ou seja:
+
+
+		[ Na verdade o problema foi a grande discrepância das notas ]
+
+
+Dedução 3: A nota de relatório é mais importante que a Nota de projeto
+
+- O primeiro colocado realmente teve uma nota de relatório maior do que a nota de projeto do segundo e esteve superior. Porquê?
+	- Pontos de Voo bem feito.
+
+1º Teste: Pega alguém que tem Boa nota de projeto e ruim nota de relatório.
+	
+
+
+
+Em vermelho, afirmativas e em azul, deduções
+
